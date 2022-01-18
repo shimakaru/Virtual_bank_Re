@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="BTC-JPY予想記録。毎時、DNNにより１時間後の状態を予測し、資産を移す仮想的な銀行です。データはbitbankより吸い出しており、ボラが読めないため現物で、その時の取引価値そのままの値段で取引したものとする(手数料は0と想定)。">
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/recipeApp.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/chart.css">
+	<title>BTC-JPY_DNN-data</title>
+</head>
+
+<body onload="init()">
+  <div id="nav">
+    <div class="nav">
+      <h2>BTC-JPY予想記録</h2>
+    </div>
+  </div>
+  <!-- 情報 -->
+  <%- body %> 
+  <div id="footer">FOOTER</div>
+</body>
+
+
+
